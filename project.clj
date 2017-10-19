@@ -15,6 +15,9 @@
   :repl-options
   {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
 
+  :figwheel {
+             :css-dirs ["resources/public/css"]
+             }
   :cljsbuild
   {:builds
    [{:id "dev"
